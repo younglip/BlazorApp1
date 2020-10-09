@@ -1,6 +1,27 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+
+/*my styles*/
+.grid-container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-column-gap: 43px;
+    grid-row-gap: 24px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.menu_item {
+    display: inline-block;
+    word-wrap: break-word;
+    width: 160px;
+    margin: 20px;
+}
+/*my styles end*/
 html, body {
+    height:100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 

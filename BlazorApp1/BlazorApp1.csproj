@@ -3,11 +3,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ElectronNET.API" Version="9.31.2" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Update="electron.manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\static\images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\static\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ElectronNET.API" Version="9.31.1" />
   </ItemGroup>
 </Project>

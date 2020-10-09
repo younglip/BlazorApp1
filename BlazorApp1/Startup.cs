@@ -28,6 +28,7 @@ namespace BlazorApp1 {
 			services.AddSingleton<WeatherForecastService>();
 		}
 
+
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
 			if (env.IsDevelopment()) {
@@ -49,7 +50,7 @@ namespace BlazorApp1 {
 				endpoints.MapFallbackToPage("/_Host");
 			});
 
-			Task.Run(async () => await Electron.WindowManager.CreateWindowAsync());
+			Task.Run(async () => await Electron.WindowManager.CreateWindowAsync()); 
 		}
 	}
 }
